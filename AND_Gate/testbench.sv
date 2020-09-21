@@ -8,11 +8,46 @@ module testbench();
   
   initial begin
     
+//display/dump waves
+    $dumpfile("dump.vcd"); //creates dump vcd file
+    
+//displays testbench and design
+    //$dumpvars(0);
+    $dumpvars(1,testbench);
+    
 //set two inputs to 1 and 0
     a1 = 1'b1;
     b1 = 1'b0;
     
+//time delay
+    #1
     $display("o1=%b", o1);
+    
+//time delay
+    #1
+    //set two inputs to 0 and 1
+    a1 = 1'b0;
+    b1 = 1'b1;
+    
+//time delay
+    #1
+    //set two inputs to 1 and 1
+    a1 = 1'b1;
+    b1 = 1'b1;
+    
+//time delay
+    #1
+    //set two inputs to 0 and 0
+    a1 = 1'b0;
+    b1 = 1'b0;
+    
+//time delay
+    #1
+    //set two inputs back to 1 and 1
+    a1 = 1'b1;
+    b1 = 1'b1;
+    
+    
     
   end
   

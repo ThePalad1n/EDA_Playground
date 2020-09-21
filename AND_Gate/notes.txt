@@ -1,0 +1,21 @@
+Testing the four cases for the AND gate
+
+The picture is the single display for each of the outputs
+
+***NOTE if you do not want to display everything, just testbench
+then replace line 17 with the line below***
+
+    $dumpvars(1,testbench);
+
+If you want to display then  testbench and design
+
+    $dumpvars(0);
+
+If you want a different display for each outpul just add
+
+    $display("o1=%b", o1);
+
+    after each set of inputs
+
+In addition, make sure that under RUN OPTIONS that
+    Open EPWave after run is checked
