@@ -1,0 +1,2 @@
+In this OR gate demo I impelmented of the OR-gate using verilog gate-level modeling
+and created a new module instead of useing the build in on on EDA Playgrounds
